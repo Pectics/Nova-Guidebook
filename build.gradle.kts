@@ -1,5 +1,5 @@
-group = "com.example" // TODO: Change this to your group
-version = "1.0-SNAPSHOT" // TODO: Change this to your addon version
+group = "me.pectics.nova.addon.guidebook"
+version = "1.0.0"
 
 plugins {
     alias(libs.plugins.kotlin)
@@ -19,9 +19,11 @@ dependencies {
 }
 
 addon {
-    name = project.name.replaceFirstChar(Char::uppercase)
+    name = "Guidebook"
     version = project.version.toString()
-    main = "com.example.ExampleAddon" // TODO: Change this to your main class
+    main = "${project.group}.Guidebook"
+    description = "A simple guidebook addon for Nova"
+    authors = listOf("Pectics")
     
     // output directory for the generated addon jar is read from the "outDir" project property (-PoutDir="...")
     val outDir = project.findProperty("outDir")
