@@ -1,5 +1,5 @@
 group = "me.pectics.nova.addon.guidebook"
-version = "1.0.0"
+version = "1.0.1"
 
 plugins {
     alias(libs.plugins.kotlin)
